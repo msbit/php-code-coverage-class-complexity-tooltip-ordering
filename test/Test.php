@@ -4,7 +4,7 @@ use PHPUnit\Framework\TestCase;
 
 class Test extends TestCase
 {
-    function test_forwardOrder(): void
+    function test_decreasing_coverage(): void
     {
         $this->assertSame(2, (new A())->a(2));
 
@@ -13,7 +13,7 @@ class Test extends TestCase
         $this->assertSame(0, (new C())->a(0));
     }
 
-    function test_reverseOrder(): void
+    function test_increasing_coverage(): void
     {
         $this->assertSame(0, (new A())->a(0));
 
